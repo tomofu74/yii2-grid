@@ -1240,6 +1240,7 @@ HTML;
         if ($this->export === false) {
             return;
         }
+        $this->export = [];
         $this->exportConversions = array_replace_recursive(
             [
                 ['from' => self::ICON_ACTIVE, 'to' => Yii::t('kvgrid', 'Active')],
